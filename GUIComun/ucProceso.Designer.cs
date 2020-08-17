@@ -28,104 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
+            this.paSuperior = new DevExpress.XtraEditors.PanelControl();
+            this.paCentral = new DevExpress.XtraEditors.PanelControl();
+            this.paInferior = new DevExpress.XtraEditors.PanelControl();
+            this.sbuCerrar = new DevExpress.XtraEditors.SimpleButton();
+            this.sbuEliminar = new DevExpress.XtraEditors.SimpleButton();
+            this.sbuCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.sbuGuardar = new DevExpress.XtraEditors.SimpleButton();
+            this.datos = new System.Data.DataSet();
+            ((System.ComponentModel.ISupportInitialize)(this.paSuperior)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paCentral)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paInferior)).BeginInit();
+            this.paInferior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datos)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelControl1
+            // paSuperior
             // 
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1125, 155);
-            this.panelControl1.TabIndex = 0;
+            this.paSuperior.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.paSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paSuperior.Location = new System.Drawing.Point(0, 0);
+            this.paSuperior.Name = "paSuperior";
+            this.paSuperior.Size = new System.Drawing.Size(714, 80);
+            this.paSuperior.TabIndex = 0;
             // 
-            // panelControl2
+            // paCentral
             // 
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(0, 155);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1125, 591);
-            this.panelControl2.TabIndex = 1;
+            this.paCentral.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paCentral.Appearance.BackColor = System.Drawing.Color.White;
+            this.paCentral.Appearance.Options.UseBackColor = true;
+            this.paCentral.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.paCentral.Enabled = false;
+            this.paCentral.Location = new System.Drawing.Point(0, 80);
+            this.paCentral.Name = "paCentral";
+            this.paCentral.Size = new System.Drawing.Size(714, 285);
+            this.paCentral.TabIndex = 1;
             // 
-            // panelControl3
+            // paInferior
             // 
-            this.panelControl3.Controls.Add(this.simpleButton4);
-            this.panelControl3.Controls.Add(this.simpleButton3);
-            this.panelControl3.Controls.Add(this.simpleButton2);
-            this.panelControl3.Controls.Add(this.simpleButton1);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl3.Location = new System.Drawing.Point(0, 660);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1125, 86);
-            this.panelControl3.TabIndex = 2;
+            this.paInferior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paInferior.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.paInferior.Controls.Add(this.sbuCerrar);
+            this.paInferior.Controls.Add(this.sbuEliminar);
+            this.paInferior.Controls.Add(this.sbuCancelar);
+            this.paInferior.Controls.Add(this.sbuGuardar);
+            this.paInferior.Location = new System.Drawing.Point(0, 365);
+            this.paInferior.Name = "paInferior";
+            this.paInferior.Size = new System.Drawing.Size(714, 68);
+            this.paInferior.TabIndex = 2;
             // 
-            // simpleButton4
+            // sbuCerrar
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(920, 26);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(116, 36);
-            this.simpleButton4.TabIndex = 3;
-            this.simpleButton4.Text = "simpleButton4";
+            this.sbuCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbuCerrar.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.sbuCerrar.Appearance.Options.UseFont = true;
+            this.sbuCerrar.Location = new System.Drawing.Point(585, 16);
+            this.sbuCerrar.Name = "sbuCerrar";
+            this.sbuCerrar.Size = new System.Drawing.Size(101, 36);
+            this.sbuCerrar.TabIndex = 3;
+            this.sbuCerrar.Text = "Cerrar";
+            this.sbuCerrar.Click += new System.EventHandler(this.sbuCerrar_Click);
             // 
-            // simpleButton3
+            // sbuEliminar
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(743, 26);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(116, 36);
-            this.simpleButton3.TabIndex = 2;
-            this.simpleButton3.Text = "simpleButton3";
+            this.sbuEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbuEliminar.Location = new System.Drawing.Point(461, 16);
+            this.sbuEliminar.Name = "sbuEliminar";
+            this.sbuEliminar.Size = new System.Drawing.Size(105, 36);
+            this.sbuEliminar.TabIndex = 2;
+            this.sbuEliminar.Text = "Eliminar";
+            this.sbuEliminar.Click += new System.EventHandler(this.sbuEliminar_Click);
             // 
-            // simpleButton2
+            // sbuCancelar
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(214, 26);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(116, 36);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "simpleButton2";
+            this.sbuCancelar.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.sbuCancelar.Appearance.Options.UseFont = true;
+            this.sbuCancelar.Location = new System.Drawing.Point(139, 16);
+            this.sbuCancelar.Name = "sbuCancelar";
+            this.sbuCancelar.Size = new System.Drawing.Size(113, 36);
+            this.sbuCancelar.TabIndex = 1;
+            this.sbuCancelar.Text = "Cancelar";
+            this.sbuCancelar.Click += new System.EventHandler(this.sbuCancelar_Click);
             // 
-            // simpleButton1
+            // sbuGuardar
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(48, 26);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(116, 36);
-            this.simpleButton1.TabIndex = 0;
-            this.simpleButton1.Text = "simpleButton1";
+            this.sbuGuardar.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.sbuGuardar.Appearance.Options.UseFont = true;
+            this.sbuGuardar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.BottomLeft;
+            this.sbuGuardar.Location = new System.Drawing.Point(14, 16);
+            this.sbuGuardar.Name = "sbuGuardar";
+            this.sbuGuardar.Size = new System.Drawing.Size(104, 36);
+            this.sbuGuardar.TabIndex = 0;
+            this.sbuGuardar.Text = "Guardar";
+            this.sbuGuardar.Click += new System.EventHandler(this.sbuGuardar_Click);
+            // 
+            // datos
+            // 
+            this.datos.DataSetName = "NewDataSet";
             // 
             // ucProceso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelControl3);
-            this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.panelControl1);
+            this.Controls.Add(this.paInferior);
+            this.Controls.Add(this.paCentral);
+            this.Controls.Add(this.paSuperior);
             this.Name = "ucProceso";
-            this.Size = new System.Drawing.Size(1125, 746);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(714, 433);
+            ((System.ComponentModel.ISupportInitialize)(this.paSuperior)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paCentral)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paInferior)).EndInit();
+            this.paInferior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.PanelControl paInferior;
+        private DevExpress.XtraEditors.SimpleButton sbuCerrar;
+        private DevExpress.XtraEditors.SimpleButton sbuEliminar;
+        private DevExpress.XtraEditors.SimpleButton sbuCancelar;
+        private DevExpress.XtraEditors.SimpleButton sbuGuardar;
+        protected DevExpress.XtraEditors.PanelControl paSuperior;
+        protected DevExpress.XtraEditors.PanelControl paCentral;
+        protected System.Data.DataSet datos;
     }
 }
